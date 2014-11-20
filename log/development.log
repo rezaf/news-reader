@@ -217,3 +217,217 @@ Migrating to CreateEntries (20130626183103)
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (1.3ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 20 Nov 2014 19:38:55 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/?p=299655"], ["json", "{\"title\":\"Why your Uber driver hates Uber\",\"link\":\"http://qz.com/299655/why-your-uber-driver-hates-uber/\",\"description\":\"Uber has a public relations disaster on its hands this week. There\\u0026#8217;s nothing like threatening to dig up dirt on journalists to piss off, well, journalists.  But there\\u0026#8217;s another disgruntled group related to Uber: the drivers themselves. Quartz spent some time on Nov. 19 riding around with one to better understand life inside the global ride-hailing [\\u0026#8230;]\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=299655\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"\",\"content_encoded\":\"\\u003Cimg width=\\\"640\\\" height=\\\"417\\\" src=\\\"http://img.qz.com/2014/11/ap284410821273-e1416470098606.jpg?w=640\\\" class=\\\"attachment-medium_10 wp-post-image\\\" alt=\\\"\\u0026quot;Uber has more supply of drivers than the demand from customers.\\u0026quot;\\\" /\\u003E\\u003Cp\\u003E\\u003Cem\\u003EUber has a \\u003Ca href=\\\"http://qz.com/298730/uber-ceo-travis-kalanick-appeared-to-tweet-an-apology-but-it-was-actually-an-internal-memo/\\\" target=\\\"_blank\\\"\\u003Epublic relations disaster\\u003C/a\\u003E on its hands this week. There\\u0026#8217;s nothing like threatening to dig up dirt on journalists to piss off, well, journalists. \\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cem\\u003EBut there\\u0026#8217;s another disgruntled group related to Uber: the drivers themselves. Quartz spent some time on Nov. 19 riding around with one to better understand life inside the global ride-hailing service. We\\u0026#8217;re withholding his last name because he fears he \\u003Ca href=\\\"http://www.theguardian.com/technology/2014/oct/17/uber-fires-driver-tweeting-article-about-company\\\"\\u003Ewould lose his job\\u003C/a\\u003E for criticizing the company. We emailed Uber for comment and will update this piece if we get any. \\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cem\\u003ETony is 49 years old. He is an UberSUV driver in New York City. Raised in Brooklyn, Tony has been working as a driver since 1986—first at a private-luxury car company and now at Uber. Edited excerpts of what he told Quartz: \\u003C/em\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EIn 2012, I lost my car to Hurricane Sandy, and I had to rent out a car to drive around. Then somebody told me that a company called Uber was giving $1,000 to start driving for them, and then a certain percent for each ride. It was 25% for a sedan, and 28% for an SUV. So I went and started working for Uber.\\u003C/p\\u003E\\n\\u003Cp\\u003EBasically, there’s no \\u003Ca href=\\\"http://www.driveubernyc.com/tlc-process\\\" target=\\\"_blank\\\"\\u003Ehiring process\\u003C/a\\u003E or anything like that. You just go there, and they give you a class in which they tell you something about Uber, and basic stuff about what to do with the customer, how long to wait, and everything I at least knew as a driver because I went there with experience.\\u003C/p\\u003E\\n\\u003Cp\\u003EThere is \\u003Ca href=\\\"http://www.forbes.com/sites/ellenhuet/2014/10/08/uber-skimps-on-driver-training-then-charges-drivers-65-for-basic-driver-skills-course/\\\" target=\\\"_blank\\\"\\u003Eno training\\u003C/a\\u003E. They basically hire people from the gutter. They don’t care. They just need bodies. They need somebody who can get their own cars, fit the best possible GPS, and start driving.\\u003C/p\\u003E\\n\\u003Cp\\u003EUber doesn’t have physical contracts. Everything is electronically done. But if you don’t sign on their terms and conditions, you cannot work. So we have to sign, though it’s actually not signing. They send a link, and you have to electronically enter and accept the terms. And these terms, even Uber guys who wrote them wouldn’t understand. That’s how long and complicated they are.\\u003C/p\\u003E\\n\\u003Cp\\u003EBut it is like a little school. It has \\u003Ca href=\\\"http://www.forbes.com/sites/jeffbercovici/2014/08/14/what-are-we-actually-rating-when-we-rate-other-people/\\\" target=\\\"_blank\\\"\\u003Ea rating system\\u003C/a\\u003E. Though we are not supposed to be rated, Uber is supposed to be rated, the reality is different. After every ride, customers can give up to five stars for their experience.\\u003C/p\\u003E\\n\\u003Cp\\u003EEarlier as a driver, I could see the rating a customer gave me. For a few months now, Uber has scrapped the option, so I don\\u0026#8217;t know what I am being rated.\\u003C/p\\u003E\\n\\u003Cp\\u003ESo, mentally, these rating systems affect us a lot. When you’re doing a good job as a reporter, you don’t want people telling you that you’re doing a bad job. If I am driving somebody who doesn’t live in New York, and they complain that I took the wrong route, how would they know the route that I should have taken? New York doesn’t have too many exits. In my 20 years of working with corporate employees, I haven\\u0026#8217;t had a single customer complaining that I took the wrong route. We have to live in the fear of losing our jobs.\\u003C/p\\u003E\\n\\u003Cp\\u003ECompared to my friends, I don’t have much problem because I am a VIP driver, and I have a 4.8 average. I can still get fired though, if I go below a 4.6.\\u003C/p\\u003E\\n\\u003Cp\\u003ENow as the company has grown so fast, our customers are more like yellow-cab trash. I have kids jumping up and down. Businesswomen putting their feet up. I never had that before. In corporate, there were only business people, where everybody behaved themselves. In Uber, I pick up drunk people at night, and they throw up. I have people who behave themselves badly, and I can’t say anything because of the rating.\\u003C/p\\u003E\\n\\u003Cp\\u003EYou have people in Uber—starting from the top manager to the guy who washes the floors—they have the same brains because when you go to talk to them, it’s like talking to a bunch of dummies. I wonder which limousine university did they go to—because there is none.\\u003C/p\\u003E\\n\\u003Cp\\u003EMy friend who is a driver, he is afraid of his own shadow. He would never back-talk to a customer. But he got an email from Uber that there are a lot of complaints against him, though he doesn’t remember having even one. They called him to their office and charged him a $99 fee. Uber said the money was for advertising and commercials, but everyone knew it was to save their jobs. And they did that to many of my friends. This is how sinister they are.\\u003C/p\\u003E\\n\\u003Cp\\u003EAnd if you ask them, the staff doesn\\u0026#8217;t know how to answer your question because they are told from the top that the computer tells us this. Well, what did you get hired for? To make your own decisions or you want the computer to make it? The computer doesn’t know customer relations. The computer doesn\\u0026#8217;t know the routes. The computer only gives you statistics.\\u003C/p\\u003E\\n\\u003Cp\\u003EThey say bad ratings don\\u0026#8217;t affect the drivers getting fares, but it does. Computers are programmed by people. If they say \\u0026#8220;we have a problem from this guy, but he is still a good driver, let’s give him less work and tell the computers to give them only, say, five pick-ups a day.\\u0026#8221; It is very calculated.\\u003C/p\\u003E\\n\\u003Cp\\u003EOn Dec. 1, they are going to automatically put those below 4.6 in UberX—whether they like it or not. [Uber X is the lower cost Uber service where the base fare is $3 as compared with UberSUV, which is a luxury service with a base fare of $14; the per-minute cost in UberX is half as much as in UberSUV.] Some of my friends will have a problem because they are 4.6. One of them owns a very expensive vehicle, and his rating system is actually 4.2. He is afraid they will transfer him to UberX.\\u003C/p\\u003E\\n\\u003Cp\\u003EUber is afraid, in my opinion, that if they lose to \\u003Ca href=\\\"http://www.amny.com/transit/tlc-proposes-rules-changes-to-hiring-drivers-1.9512638\\\"\\u003Ethe TLC (New York City\\u0026#8217;s Taxi and Limousine Commission) in court\\u003C/a\\u003E, they are going to lose customers. The rule says a driver cannot work for more than one base at once. And drivers in Uber are right now working for two or three bases, though TLC is catching them and giving them $500 tickets.\\u003C/p\\u003E\\n\\u003Cp\\u003EWhat Uber did in the summers was give out iPhones to drivers, just like you give candies to kids, and also gave $500 to whoever joined. So, anybody with that phone and the app installed in the phone could work for Uber. They completely violated the TLC rule. They wanted all the business—they are like those pigs who want to eat everything.\\u003C/p\\u003E\\n\\u003Cp\\u003EThey hired too many drivers, so now there is more supply than the demand.\\u003C/p\\u003E\\n\\u003Cp\\u003EIf you go to any Uber office, it is like a zoo—people come from different countries, because they heard about Uber. “Oh, we can work in Uber in New York.” But they have never driven cars here. I have a friend who came from Pakistan a few months ago, got a TLC license, and now works for Uber. And he has no knowledge of the city; all he does is follow the GPS route. And it’s not just this one guy; there are many others.\\u003C/p\\u003E\\n\\u003Cp\\u003EThese drivers come with no experience. Of course, customers are going to give bad ratings.\\u003C/p\\u003E\\n\\u003Cp\\u003EI am working exclusively for Uber. But they are diverting more customers to UberX—and that takes away my fare. They told me, “Go get a good vehicle.” And I have one. I now own a Lincoln Navigator.\\u003C/p\\u003E\\n\\u003Cp\\u003EThey promised me heaven, but I haven’t gotten that. It’s only hell for now. I am actually waiting for the TLC rule. If it does happen that drivers cannot work for more than one base, Uber will go after the drivers and get their phones back. Then they are going to lose UberX drivers—and we are going to start doing okay.\\u003C/p\\u003E\\n\\u003Cp\\u003EWhen I started working with Uber, I was never free for more than five minutes. I was busy all day long. Sometimes, I just wanted to park my car and sleep. Now, I have too much time and I make less money. Well, the company has a lot of people who have downloaded the Uber app, but that doesn’t mean all of them are regularly booking cabs. So downloading the app is half reality of the statistic. I think a lot of people just try Uber once, and once they end up paying a lot of money, they don’t want to try Uber again.\\u003C/p\\u003E\\n\\u003Cp\\u003EOnly the payment is no problem. Every Thursday, you get your check. Only once they had a problem—and we all chimed in on the internet, and we gave them our piece of mind, so they fixed the system. That’s the only good thing, because I don’t know if they want to violate labor laws since there are going to be a lot of labor laws to violate.\\u003C/p\\u003E\\n\\u003Cp\\u003EToday, we got an email that they will give us a discount for health insurance, with a company called Stride Health. But we can get better discounts without Uber. We can get it for $640; with Uber, it\\u0026#8217;s $680. So which is better? I can\\u0026#8217;t pick either because my wife doesn’t work, and I have two kids to support. I am the sole provider and I cannot pay $640 dollars.\\u003C/p\\u003E\\n\\u003Cp\\u003EHowever, with 10,000 drivers in group insurance, we should get a huge discount.\\u003C/p\\u003E\\n\\u003Cp\\u003EI bought the car in 2013. I still have car payments. When I bought this car, I wondered am I still going to be in Uber to pay this off? Because I don’t know how long am I going to be working for them; anyone can get fired with the current rating system. Even me, as a VIP driver, I am worried. There should at least be a 10-year assurance, and if not, then at least two years. And once you’re doing good, they should forget about the rating system. If Uber were the ones to be rated, they would get the lowest rating.\\u003C/p\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=299655\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/299655/why-your-uber-driver-hates-uber/#comments\",\"pubDate\":\"2014-11-20T06:00:45-08:00\",\"category\":\"Uncategorized\",\"guid\":\"http://qz.com/?p=299655\",\"dc_creator\":\"Shelly Walia\",\"media_content_url\":\"http://img.qz.com/2014/11/ap284410821273-e1416470098606.jpg?w=640\",\"media_content_type\":\"html\",\"media_title\":\"Hello, Again\",\"media_thumbnail_url\":\"http://img.qz.com/2014/11/ap284410821273-e1416470098606.jpg?w=640\"}"], ["link", "http://qz.com/299655/why-your-uber-driver-hates-uber/"], ["published_at", Thu, 20 Nov 2014 14:00:45 UTC +00:00], ["title", "Why your Uber driver hates Uber"], ["updated_at", Thu, 20 Nov 2014 19:38:55 UTC +00:00]]
   [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 11:55:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 11:55:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 11:55:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 11:55:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 11:55:52 -0800
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-20 11:56:23 -0800
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-20 11:56:44 -0800
+Processing by Api::FeedsController#index as HTML
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 24ms (Views: 9.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 11:57:28 -0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/feeds/1/entries" for 127.0.0.1 at 2014-11-20 11:57:38 -0800
+Processing by Api::EntriesController#index as HTML
+  Parameters: {"feed_id"=>"1"}
+  [1m[36mFeed Load (1.7ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEntry Load (3.0ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+Completed 200 OK in 41ms (Views: 10.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/feeds/1/entries" for 127.0.0.1 at 2014-11-20 11:57:42 -0800
+Processing by Api::EntriesController#index as HTML
+  Parameters: {"feed_id"=>"1"}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mEntry Load (0.7ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 11:58:30 -0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 11:58:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 11:58:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 11:58:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 11:58:30 -0800
+
+
+Started GET "/api/feeds/:id(" for 127.0.0.1 at 2014-11-20 11:58:38 -0800
+Processing by Api::FeedsController#show as HTML
+  Parameters: {"id"=>":id("}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", ":id("]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound - Couldn't find Feed with id=:id(:
+  activerecord (4.0.2) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.2) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.2) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.2) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.2) lib/active_record/querying.rb:3:in `find'
+  app/controllers/api/feeds_controller.rb:7:in `show'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__454573423395585473__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__77087701659380013__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70132432994580/variables" for 127.0.0.1 at 2014-11-20 11:58:39 -0800
+
+
+Started GET "/api/feeds/1" for 127.0.0.1 at 2014-11-20 11:58:43 -0800
+Processing by Api::FeedsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2014-11-20 11:58:47 -0800
+Processing by Api::FeedsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 11:58:55 -0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 11:58:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 11:58:55 -0800
