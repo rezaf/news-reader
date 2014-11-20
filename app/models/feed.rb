@@ -37,4 +37,8 @@ class Feed < ActiveRecord::Base
       return false
     end
   end
+  
+  def latest_entries
+    self.reload if (Time.now - self.updated_at) > 30
+  end
 end
