@@ -2,7 +2,7 @@ NewsReader.Routers.Feeds = Backbone.Router.extend({
   
   routes: {
     "": "index",
-    "feeds/:id": "show",
+    "feeds/:id": "feedShow",
   },
   
   index: function () {
@@ -11,13 +11,18 @@ NewsReader.Routers.Feeds = Backbone.Router.extend({
       collection: NewsReader.feeds
     });
     
-    indexView.render();
-    
+    indexView.render();   
     $("body").html(indexView.$el);
-    
   },
-
-  // show: function (id) {
-  //
-  // }
+  
+  feedShow: function (id) {
+    NewsReader.feeds.fetch();
+    
+    var indexView = new NewsReader.Views.FeedsIndex({
+      collection: NewsReader.feeds
+    });
+    
+    indexView.render();
+    $("body").html(indexView.$el);
+  },
 });
